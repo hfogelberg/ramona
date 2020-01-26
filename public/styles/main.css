@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // This defines what one rem is
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.primary-header {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #2980b9;
+}
+
+p.main {
+  color: #16a085;
+  margin: 0 5rem;
+  font-size: 3.2rem;
+  font-weight: 300;
+  padding: 1rem;;
+  text-align: center;
+}
