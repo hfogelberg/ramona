@@ -1,0 +1,22 @@
+{
+  "name": "ramona",
+  "version": "0.0.1",
+  "description": "Ramona",
+  "main": "server.js",
+  "author": "Henrik Fogelberg <henrik.fogelberg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently --kill-others \"npm run build-css\" \"npm run server\"",
+    "build-css": "node-sass --include-path scss sass/main.scss assets/style.css",
+    "server": "live-server --port=3000"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

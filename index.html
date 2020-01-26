@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Henrik's Widgets | A Showcase </title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class='header__header-box'>
+      <div class='header__text-box'>
+        <h1 class='heading-primary'>
+          <span class='heading-primary--main'>
+            Henrik's
+          </span>
+          <span class='heading-primary--sub'>
+            Widgets
+          </span>
+        </h1>
+      </div>
+
+      <p class="paragraph paragraph">
+        A collection of useful UI Widgets I've created, tweaked or borrowed.
+      </p>
+    </div>
+  </header>
+
+  <section class="section menu-section">
+    <h2 class="heading-secondary">
+      Menu
+    </h2>
+
+    <div class="menu">
+      <ul class="menu__list">
+        <li class="menu__list--item">
+          <a href="#flexgrid">Flexgrid</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#slide-in">Slide-In Menu</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#horizontal">Hotizontal Slide</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#card-flip">Card Flip</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#gradient-header">Gradient Header</a>
+        </li>
+        <li class="menu__list--item">
+          <a href="#file-upload">File upload</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section flexgrid" id="flexgrid">
+    <h2 class="heading-secondary">
+      Flexgrid
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      Responsive grid layout using Flexbox.
+      <br>
+      <a href="https://github.com/hfogelberg/widgets/blob/master/sass/components/_flexgrid.scss" class="code-link">Source code</a>
+    </p>
+
+    <div class="demo">
+      <div class="row">
+        <div class="col-1-12 color-red">
+          <h2>.col-1-12</h2>
+        </div>
+        <div class="col-11-12 color-blue">
+          <h2>.col-11-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-2-12 color-red">
+          <h2>.col-2-12</h2>
+        </div>
+        <div class="col-10-12 color-blue">
+          <h2>.col-10-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3-12 color-red">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-9-12 color-blue">
+          <h2>.col-9-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4-12 color-red">
+          <h2>.col-4-12</h2>
+        </div>
+        <div class="col-8-12 color-blue">
+          <h2>.col-8-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5-12 color-red">
+          <h2>.col-5-12</h2>
+        </div>
+        <div class="col-7-12 color-blue">
+          <h2>.col-7-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6-12 color-red">
+          <h2>.col-6-12</h2>
+        </div>
+        <div class="col-6-12 color-blue">
+          <h2>.col-6-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4-12 color-red">
+          <h2>.col-4-12</h2>
+        </div>
+        <div class="col-4-12 color-blue">
+          <h2>.col-4-12</h2>
+        </div>
+        <div class="col-4-12 color-green">
+          <h2>.col-4-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3-12 color-red">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-3-12 color-blue">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-3-12 color-green">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-3-12 color-orange">
+          <h2>.col-3-12</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3-12 color-red">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-3-12 color-blue">
+          <h2>.col-3-12</h2>
+        </div>
+        <div class="col-6-12 color-green">
+          <h2>.col-6-12</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section slide-in" id="slide-in">
+    <h2 class="heading-secondary">
+      Slide in menu
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      Slide in menu in Flexbox and javascript.
+      <br />
+      <a href="https://github.com/hfogelberg/widgets/blob/master/sass/components/_slidemenu.scss" class="code-link">Source code</a>
+    </p>
+
+    <button class='hamburger' onclick="openNav()">&#9776;</button>
+
+    <div class="sidenav" id="sidenav">
+      <button onclick="closeNav()" class="btnclose">X</button>
+      <a href="https://www.google.com">Google</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+
+  <section class="section horizontal" id="horizontal">
+    <h2 class="heading-secondary">
+      Horizontal slide
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      Horizontally sliding items. Especially useful on mobiles and tablets.
+      <br>
+      <a href="https://github.com/hfogelberg/widgets/blob/master/sass/components/_horizontal-slide.scss" class="code-link">Source code</a>
+    </p>
+
+    <div class="horizontal-slide">
+      <div class="horizontal-slide__wrapper">
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 1</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 2</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 3</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 4</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 5</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 6</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 7</h3>
+        </div>
+        <div class="horizontal-slide__wrapper--card">
+          <h3 class="heading-tertiary">Card 8</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card-flip" id="card-flip">
+    <h2 class="heading-secondary">
+      Card Flip Animation
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      Hover to flip the card.
+      <br>
+      <a href="https://github.com/hfogelberg/widgets/blob/master/sass/components/_card_flip.scss" class="code-link">Source code</a>
+    </p>
+
+    <div class="flip-container">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <h3 class="heading-tertiary">
+            Front
+          </h3>
+        </div>
+        <div class="card__side card__side--back">
+          <h3 class="heading-tertiary">Back</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section gradient-header" id="gradient-header">
+    <h2 class="heading-secondary">
+      Gradient header
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      Text with color gradient. The text will skew when hovering over it.
+      <br>
+      <a href="https://github.com/hfogelberg/widgets/blob/master/sass/components/_gradient-text.scss">Source code</href>
+    </p>
+
+    <p class="gradient-text">Gradient header</p>
+  </section>
+
+  <section class="section file-upload" id="file-upload">
+    <h2 class="heading-secondary">
+      File upload
+    </h2>
+    <p class="paragraph info u-margin-bottom-medium">
+      A more nicely styled file upload widget.
+    </p>
+
+    <div class="upload-sample">
+      <input type="file" name="image" id="file" class="inputfile" />
+      <label for="file">
+        <img src="/assets/img/upload.svg" class="icon">Choose a file</label>
+    </div>
+  </section>
+
+  <script src="/assets/scripts/slideMenu.js"></script>
+
+</body>
+
+</html>
